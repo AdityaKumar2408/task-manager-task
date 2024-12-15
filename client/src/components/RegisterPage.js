@@ -11,7 +11,7 @@ const RegisterPage = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://task-manager-xy1l.onrender.com/register', { email, password });
+      await axios.post('https://task-manager-task-7.onrender.com/register', { email, password });
       navigate('/login');
     } catch (error) {
       console.error('Registration failed', error);
