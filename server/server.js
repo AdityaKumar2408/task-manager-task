@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 5000;
 app.use(cors({
-  origin: 'https://task-manager-task-4.onrender.com', 
+  origin: 'https://profound-madeleine-f4cc13.netlify.app/register', 
   credentials: true, 
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
   allowedHeaders: ['Content-Type', 'Authorization']
