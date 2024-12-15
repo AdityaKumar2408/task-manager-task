@@ -20,7 +20,7 @@ const TaskList = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await axios.get('https://task-manager-xy1l.onrender.com/tasks', {
+        const response = await axios.get('https://task-manager-task-7.onrender.com/tasks', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
@@ -52,7 +52,7 @@ const TaskList = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `https://task-manager-xy1l.onrender.com/tasks/${currentTask._id}`,
+        `https://task-manager-task-7.onrender.com/tasks/${currentTask._id}`,
         newTask,
         {
           headers: {
@@ -77,7 +77,7 @@ const TaskList = () => {
 
   const handleDeleteTask = async (taskId) => {
     try {
-      await axios.delete(`https://task-manager-xy1l.onrender.com/tasks/${taskId}`, {
+      await axios.delete(`https://task-manager-task-7.onrender.com/tasks/${taskId}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
