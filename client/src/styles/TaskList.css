@@ -1,0 +1,126 @@
+/* ... (keep existing container and task list styles) ... */
+
+/* Full screen modal styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  
+  .modal-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem;
+    box-shadow: none;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  .modal-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Updated form styles for full screen */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .form-input,
+  .form-select {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+    background-color: white;
+  }
+  
+  .form-input:focus,
+  .form-select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+  }
+  
+  .datetime-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  /* Updated button styles for full screen */
+  .button-group {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  /* Form section styling */
+  .form-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #374151;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .modal-content {
+      padding: 1rem;
+    }
+  
+    .form-group {
+      gap: 1.5rem;
+    }
+  
+    .datetime-group {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  
+    .button-group {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .btn {
+      max-width: 100%;
+    }
+  }

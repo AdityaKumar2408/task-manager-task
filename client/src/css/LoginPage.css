@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+    font-size: 2.5em;
+    color: #4a90e2;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.login-section input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.login-section button {
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-section button:hover {
+    background-color: #357ab8;
+}
