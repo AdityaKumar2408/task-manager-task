@@ -28,7 +28,7 @@ const AddTask = () => {
                 return;
             }
 
-            const response = await axios.post('https://task-manager-xy1l.onrender.com/add', formData, {
+            const response = await axios.post('https://task-manager-task-7.onrender.com/add', formData, {
                 headers: {
                     Authorization: `Bearer ${token}` 
                 }
