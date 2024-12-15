@@ -18,7 +18,7 @@ const Dashboard = () => {
         const fetchStats = async () => {
             try {
                 const token = localStorage.getItem('token'); 
-                const { data } = await axios.get('https://task-manager-xy1l.onrender.com/dashboard', {
+                const { data } = await axios.get('https://task-manager-task-7.onrender.com/dashboard', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
