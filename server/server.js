@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 5000;
 app.use(cors({
-  origin: 'https://profound-madeleine-f4cc13.netlify.app/register', 
+  origin: 'https://admirable-treacle-99a153.netlify.app/', 
   credentials: true, 
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
   allowedHeaders: ['Content-Type', 'Authorization']
