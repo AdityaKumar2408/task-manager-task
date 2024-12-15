@@ -11,13 +11,9 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 5000;
 app.use(cors({
-    origin: [ 
-      'http://localhost:3001', // Local frontend
-    'https://glittering-mochi-2de266.netlify.app', // Your Netlify frontend
-    'https://timely-jelly-d87f1a.netlify.app', // Deployed frontend (current origin)
-    'https://task-manager-xy1l.onrender.com'
-   
-       ], 
+    
+    origin: true,
+    credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
