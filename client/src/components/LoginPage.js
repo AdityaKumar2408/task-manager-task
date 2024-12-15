@@ -11,7 +11,7 @@ const LoginPage = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://task-manager-xy1l.onrender.com/login', { email, password });
+      const response = await axios.post('https://task-manager-task-7.onrender.com/login', { email, password });
       localStorage.setItem('token', response.data.token);
       navigate('/dashboard');
     } catch (error) {
